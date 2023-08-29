@@ -2,6 +2,16 @@
  * @param {number[]} digits
  * @return {number[]}
  */
+
+
+
+///////////////////////////////////
+// failed original answer /////////
+//////////////////////////////////
+
+// this solution has to deal with too many test cases, that its can cause a lot of errors If I don't catch one.
+
+
 // var plusOne = function(digits) {
 //     let num
 //     let last = digits.length - 1;
@@ -34,6 +44,15 @@
 //     return digits
 // };
 
+
+///////////////////////////////////
+////////// First Solution /////////
+///////////////////////////////////
+
+
+//it's not the most intuitive answer
+
+
 // var plusOne = function(digits) {
 //     let carry = 1; // Start with a carry of 1
 //     let last = digits.length - 1;
@@ -58,23 +77,26 @@
 //     return digits;
 // };
 
-// var plusOne = function(digits) {
-//     // join all numbers into one string
-//     let join = digits.join('')
+
+
+
+///////////////////////////////////
+////////// Second Solution ////////
+///////////////////////////////////
+
+var plusOne = function(digits) {
+    // join all numbers into one string
+    let join = digits.join('')
     
-//     // convert it into an integer and add 1 to the number
-//     let number = parseInt(join) + 1
+    // convert it into a big integer and add 1 to the number
+    let number = BigInt(join) + BigInt(1)
 
-//     // return an array that has been converted back to a string and split
-//     return number.toString().split('')
-// };
-
-
-
+    // return an array that has been converted back to a string and split
+    return number.toString().split('')
+};
 
 
 // simplified version
-var plusOne = function(digits) {
-    // return an array that has been converted back to a string and split
-    return (BigInt(digits.join('')) + BigInt(1)).toString().split('')
-};
+// var plusOne = function(digits) {
+//     return (BigInt(digits.join('')) + BigInt(1)).toString().split('')
+// };
