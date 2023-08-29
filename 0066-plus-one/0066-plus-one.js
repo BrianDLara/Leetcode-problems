@@ -84,19 +84,19 @@
 ////////// Second Solution ////////
 ///////////////////////////////////
 
-var plusOne = function(digits) {
-    // join all numbers into one string
-    let join = digits.join('')
+// var plusOne = function(digits) {
+//     // join all numbers into one string
+//     let join = digits.join('')
     
-    // convert it into a big integer and add 1 to the number
-    let number = BigInt(join) + BigInt(1)
+//     // convert it into a big integer and add 1 to the number
+//     let number = BigInt(join) + BigInt(1)
 
-    // return an array that has been converted back to a string and split
-    return number.toString().split('')
-};
+//     // return an array that has been converted back to a string and split
+//     return number.toString().split('')
+// };
 
 
 // simplified version
-// var plusOne = function(digits) {
-//     return (BigInt(digits.join('')) + BigInt(1)).toString().split('')
-// };
+var plusOne = function(digits) {
+    return (BigInt(digits.join('')) + BigInt(1)).toString().split('')
+};
