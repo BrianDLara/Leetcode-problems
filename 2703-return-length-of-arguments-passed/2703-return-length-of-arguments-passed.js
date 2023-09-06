@@ -2,8 +2,8 @@
  * @return {number}
  */
 var argumentsLength = function(...args) {
- let size = args.length
- return size
+    let size = args.length
+    return size
 };
 
 /**
