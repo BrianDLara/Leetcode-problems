@@ -4,5 +4,5 @@
  */
 var majorityElement = function(nums) {
     let sorted = nums.sort((a, b) => (a - b))
-    return nums[Math.floor((nums.length - 1) / 2)] // this worke=s because the majority element needs to appear more than half times
+    return nums[Math.floor((nums.length - 1) / 2)] // this works because the majority element needs to appear more than half times
 };
