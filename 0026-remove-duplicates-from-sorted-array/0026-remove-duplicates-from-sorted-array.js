@@ -9,8 +9,7 @@ var removeDuplicates = function(nums) {
         if (nums[current] === nums[next]){
             nums.splice(current, 1)
         } else {
-            current++
+            current ++
         }
     }
-   
 };
